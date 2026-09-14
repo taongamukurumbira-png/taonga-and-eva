@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+
+    <!-- Makes the website work properly on phones -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Taonga ❤️ Eva</title>
+
+    <!-- Connect our CSS file -->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- Main website container -->
+    <div class="container">
+
+        <!-- Big heart -->
+        <div class="heart">❤️</div>
+
+        <!-- Main title -->
+        <h1>Taonga ❤️ Eva</h1>
+
+        <!-- Romantic message -->
+        <p>
+            You mean so much to me. ❤️
+            <br>
+            Every moment with you makes my heart happy. 💕
+        </p>
+
+        <!-- Question -->
+        <h2>Will you be mine? 🥺❤️</h2>
+
+        <!-- YES button -->
+        <button id="yesButton" onclick="sayYes()">
+            YES ❤️
+        </button>
+
+        <!-- NO button -->
+        <button id="noButton" onmouseover="moveNo()">
+            NO 😢
+        </button>
+
+        <!-- Music button -->
+        <button id="musicButton" onclick="toggleMusic()">
+            🎵 Play Music
+        </button>
+
+        <!-- Hidden message -->
+        <div id="message">
+
+            <h2>YAAAAAY! ❤️🥰</h2>
+
+            <p>
+                I knew you loved me! 💕
+                <br><br>
+                You just made my heart the happiest! ❤️
+                <br><br>
+                I Love You Forever! 💖
+            </p>
+
+        </div>
+
+        <!-- Photo gallery -->
+        <div id="gallery">
+
+            <h2>Our Beautiful Memories ❤️</h2>
+
+            <div class="photos">
+
+                <img src="images/photo1.jpg" alt="Our memory">
+
+                <img src="images/photo2.jpg" alt="Our memory">
+
+                <img src="images/photo3.jpg" alt="Our memory">
+
+                <img src="images/photo4.jpg" alt="Our memory">
+
+            </div>
+
+        </div>
+
+    </div>
+
+    <!-- Music -->
+    <audio id="music" loop>
+
+        <source src="music/love-song.mp3" type="audio/mpeg">
+
+    </audio>
+
+    <!-- Connect JavaScript -->
+    <script src="script.js"></script>
+
+</body>
+
+</html>
