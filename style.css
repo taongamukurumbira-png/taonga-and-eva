@@ -1,0 +1,267 @@
+/* Remove default spacing */
+* {
+    box-sizing: border-box;
+}
+
+/* Main page */
+body {
+
+    margin: 0;
+
+    min-height: 100vh;
+
+    display: flex;
+
+    justify-content: center;
+
+    align-items: center;
+
+    font-family: Arial, sans-serif;
+
+    background: linear-gradient(
+        135deg,
+        #ff758c,
+        #ff7eb3
+    );
+
+    overflow-x: hidden;
+
+    padding: 20px;
+}
+
+/* Main white box */
+.container {
+
+    text-align: center;
+
+    background: white;
+
+    padding: 35px;
+
+    border-radius: 25px;
+
+    width: 95%;
+
+    max-width: 600px;
+
+    box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+
+    position: relative;
+
+    z-index: 2;
+}
+
+/* Main title */
+h1 {
+
+    color: #ff3366;
+
+    font-size: 45px;
+
+}
+
+/* Paragraph */
+p {
+
+    font-size: 20px;
+
+    color: #555;
+
+    line-height: 1.5;
+}
+
+/* Heart */
+.heart {
+
+    font-size: 70px;
+
+    animation: beat 1s infinite;
+}
+
+/* Buttons */
+button {
+
+    border: none;
+
+    padding: 15px 30px;
+
+    margin: 10px;
+
+    font-size: 20px;
+
+    border-radius: 30px;
+
+    cursor: pointer;
+
+    transition: 0.3s;
+}
+
+/* YES button */
+#yesButton {
+
+    background: #ff3366;
+
+    color: white;
+}
+
+/* YES hover */
+#yesButton:hover {
+
+    transform: scale(1.15);
+}
+
+/* NO button */
+#noButton {
+
+    background: #777;
+
+    color: white;
+
+}
+
+/* Music button */
+#musicButton {
+
+    background: #8e44ad;
+
+    color: white;
+}
+
+/* Hidden message */
+#message {
+
+    display: none;
+
+    color: #ff3366;
+
+}
+
+/* Photo gallery */
+#gallery {
+
+    display: none;
+
+    margin-top: 25px;
+}
+
+/* Photos */
+.photos {
+
+    display: grid;
+
+    grid-template-columns: repeat(2, 1fr);
+
+    gap: 15px;
+
+}
+
+/* Individual photos */
+.photos img {
+
+    width: 100%;
+
+    height: 200px;
+
+    object-fit: cover;
+
+    border-radius: 18px;
+
+    box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+
+}
+
+/* Heart animation */
+@keyframes beat {
+
+    0%, 100% {
+
+        transform: scale(1);
+
+    }
+
+    50% {
+
+        transform: scale(1.2);
+
+    }
+
+}
+
+/* Floating hearts */
+.floating-heart {
+
+    position: fixed;
+
+    color: white;
+
+    font-size: 25px;
+
+    animation: float 5s linear infinite;
+
+    pointer-events: none;
+
+}
+
+/* Floating animation */
+@keyframes float {
+
+    from {
+
+        transform: translateY(100vh);
+
+        opacity: 1;
+
+    }
+
+    to {
+
+        transform: translateY(-10vh);
+
+        opacity: 0;
+
+    }
+
+}
+
+/* Phone screen */
+@media (max-width: 600px) {
+
+    .container {
+
+        padding: 25px 15px;
+
+    }
+
+    h1 {
+
+        font-size: 34px;
+
+    }
+
+    p {
+
+        font-size: 18px;
+
+    }
+
+    .heart {
+
+        font-size: 55px;
+
+    }
+
+    button {
+
+        font-size: 17px;
+
+        padding: 13px 25px;
+
+    }
+
+    .photos img {
+
+        height: 150px;
+
+    }
+
+}
